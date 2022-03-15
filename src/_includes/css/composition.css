@@ -1,0 +1,7 @@
+.container {
+	max-width: var(--container-width);
+}
+
+.stack > * + * {
+	margin-top: 1em;
+}

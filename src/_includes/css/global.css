@@ -1,0 +1,9 @@
+:root {
+	--container-gutter-size: 2rem;
+	--container-width: 50rem;
+}
+
+body {
+	font-family: -apple-system, sans-serif;
+	margin: 1rem;
+}

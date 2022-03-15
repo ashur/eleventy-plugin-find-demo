@@ -1,0 +1,15 @@
+---
+permalink: /index.html
+---
+{%- from "components/system/component.njk" import component -%}
+
+<h1>{{ pkg.name }}</h1>
+{# <ul> #}
+{% for example in collections.examples %}
+	{{ component(example.data.contentType, example.data) }}
+{# 	<h2>{{ example.data.title }}</h2> #}
+{# 	{{ example.data | log }} #}
+{# 	<li><a href="{{ example.url }}">{{ example.data.title }}</a></li> #}
+{# 	{{ example.data | log }} #}
+{% endfor %}
+{# </ul> #}

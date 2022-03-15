@@ -1,0 +1,16 @@
+{% macro render(params) %}
+<section class="stack example">
+	<h2>{{ params.title }}</h2>
+
+	<code class="data">fruits:
+	  - apple
+	  - banana
+	  - cherry
+	</code>
+
+	<code class="template">{%- raw -%}{{ fruits | find("apple") }}{% endraw %}</code>
+
+	<code class="result">{{ fruits | find("apple") }}</code>
+
+</section>
+{% endmacro %}

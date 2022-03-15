@@ -1,0 +1,16 @@
+---
+title: Array of Primitives
+fruits:
+  - apple
+  - banana
+  - cherry
+---
+<code class="data">fruits:
+  - apple
+  - banana
+  - cherry
+</code>
+
+<code class="template">{%- raw -%}{{ fruits | find( ["banana", "cherry"] ) }}{% endraw %}</code>
+
+<code class="result">{{ fruits | find( ["banana", "cherry"] ) }}</code>
