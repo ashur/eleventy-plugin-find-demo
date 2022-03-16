@@ -2,12 +2,12 @@
 <section class="stack example">
 	<h2>{{ params.title }}</h2>
 
-	<code class="data">{{ params.data | yaml }}</code>
+	{% highlight "yaml" %}{{ params.data | yaml }}{% endhighlight %}
 
-	<code class="template">{{ params.snippet }}</code>
+	{% highlight "jinja2" %}{{ params.snippet | safe }}{% endhighlight %}
 
 	{% if caller %}
-	<code class="result">{{- caller() -}}</code>
+	{% highlight "javascript" %}{{- caller() -}}{% endhighlight %}
 	{% endif %}
 
 </section>

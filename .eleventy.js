@@ -2,6 +2,7 @@ const markdownIt = require("markdown-it");
 
 module.exports = eleventyConfig =>
 {
+	eleventyConfig.addPlugin( require("@11ty/eleventy-plugin-syntaxhighlight") );
 	eleventyConfig.addPlugin( require("eleventy-plugin-find") );
 
 	let markdownLib = markdownIt({}).disable('code');

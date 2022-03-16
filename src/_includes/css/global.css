@@ -7,3 +7,14 @@ body {
 	font-family: -apple-system, sans-serif;
 	margin: 1rem;
 }
+
+pre[class*="language-"] {
+	border-radius: 4px;
+	line-height: 1.5;
+	padding: 1.5em;
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+	font-size: 0.9em;
+}
