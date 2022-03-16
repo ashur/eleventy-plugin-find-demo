@@ -1,0 +1,18 @@
+---
+title: Single Property-Value Object
+data:
+  fruits:
+    - name: apple
+      color: red
+      sour: false
+
+    - name: banana
+      color: yellow
+      sour: false
+
+    - name: lemon
+      color: yellow
+      sour: true
+snippet: '{{ fruits | find({ property: "name", value: "banana" }) }}'
+---
+{{ data.fruits | find({ property: "name", value: "banana" }) | dump | safe }}
