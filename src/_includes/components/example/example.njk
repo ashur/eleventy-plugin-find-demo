@@ -8,9 +8,11 @@
 	  - cherry
 	</code>
 
-	<code class="template">{%- raw -%}{{ fruits | find("apple") }}{% endraw %}</code>
+	<code class="template">{{ params.snippet }}</code>
 
-	<code class="result">{{ fruits | find("apple") }}</code>
+	{% if caller %}
+	<code class="result">{{- caller() -}}</code>
+	{% endif %}
 
 </section>
 {% endmacro %}
