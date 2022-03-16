@@ -1,9 +1,10 @@
 ---
 title: Array of Primitives
-fruits:
-  - apple
-  - banana
-  - cherry
+data:
+  fruits:
+    - apple
+    - banana
+    - cherry
 snippet: '{{ fruits | find(["banana", "cherry"]) }}'
 ---
-{{ fruits | find(["banana", "cherry"]) }}
+{{ data.fruits | find(["banana", "cherry"]) }}

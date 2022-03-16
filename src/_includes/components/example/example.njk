@@ -2,11 +2,7 @@
 <section class="stack example">
 	<h2>{{ params.title }}</h2>
 
-	<code class="data">fruits:
-	  - apple
-	  - banana
-	  - cherry
-	</code>
+	<code class="data">{{ params.data | yaml }}</code>
 
 	<code class="template">{{ params.snippet }}</code>
 

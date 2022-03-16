@@ -1,9 +1,10 @@
 ---
 title: Single Primitive
-fruits:
-  - apple
-  - banana
-  - cherry
+data:
+  fruits:
+    - apple
+    - banana
+    - cherry
 snippet: fruits | find("apple")
 ---
-{{ fruits | find("apple") }}
+{{ data.fruits | find("apple") }}
