@@ -5,6 +5,5 @@ permalink: /index.html
 
 <h1 class="page__title">{{ pkg.name }}</h1>
 {% for example in collections.examples %}
-	{% call component(example.data.contentType, example.data) %}{{- example.templateContent -}}
-	{% endcall %}
+	{% call component(example.data.contentType, example.data) %}{{- example.templateContent | safe -}}{% endcall %}
 {% endfor %}

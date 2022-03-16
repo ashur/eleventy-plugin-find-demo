@@ -7,7 +7,7 @@
 	{% highlight "jinja2" %}{{ params.snippet | safe }}{% endhighlight %}
 
 	{% if caller %}
-	{% highlight "javascript" %}{{- caller() -}}{% endhighlight %}
+	{% highlight "javascript" %}{{- caller() | safe -}}{% endhighlight %}
 	{% endif %}
 
 </section>
