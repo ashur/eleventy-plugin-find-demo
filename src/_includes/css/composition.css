@@ -5,3 +5,7 @@
 .stack > * + * {
 	margin-top: 1em;
 }
+
+.stack-lg > * + * {
+	margin-top: var(--container-gutter-size);
+}

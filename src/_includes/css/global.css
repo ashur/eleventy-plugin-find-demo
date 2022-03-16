@@ -5,7 +5,7 @@
 
 body {
 	font-family: -apple-system, sans-serif;
-	margin: 1rem;
+	margin: var(--container-gutter-size);
 }
 
 pre[class*="language-"] {
