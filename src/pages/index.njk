@@ -3,7 +3,7 @@ permalink: /index.html
 ---
 {%- from "components/system/component.njk" import component -%}
 
-<h1>{{ pkg.name }}</h1>
+<h1 class="page__title">{{ pkg.name }}</h1>
 {% for example in collections.examples %}
 	{% call component(example.data.contentType, example.data) %}{{- example.templateContent -}}
 	{% endcall %}
