@@ -1,0 +1,22 @@
+---
+title: Array of property-value objects
+order: 3
+data:
+  fruits:
+    - name: apple
+      color: red
+      sour: false
+
+    - name: banana
+      color: yellow
+      sour: false
+
+    - name: lemon
+      color: yellow
+      sour: true
+snippet: '{{ fruits | find([{ property: "color", value: "yellow" }, { property: "sour", value: true }]) }}'
+---
+{{ data.fruits | find([
+    { property: "color", value: "yellow" },
+    { property: "sour", value: true }
+]) | dump | safe }}
