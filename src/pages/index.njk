@@ -3,7 +3,12 @@ permalink: /index.html
 ---
 {%- from "components/system/component.njk" import component -%}
 
-<h1 class="page__title">{{ pkg.name }}</h1>
+<div class="stack">
+	<h1 class="page__title">{{ pkg.name }}</h1>
+
+	<p class="page__description">Usage examples for <a href="https://www.npmjs.com/package/eleventy-plugin-find">eleventy-plugin-find</a>, a utility filter to find array members that match a set of rules.</p>
+</div>
+
 {% for example in collections.examples %}
 	{% call component(example.data.contentType, example.data) %}{{- example.templateContent | safe -}}{% endcall %}
 {% endfor %}
