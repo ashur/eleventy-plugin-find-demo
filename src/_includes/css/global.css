@@ -1,6 +1,12 @@
 :root {
 	--container-gutter-size: 1.5rem;
-	--container-width: 50rem;
+	--container-width: 42rem;
+}
+
+@media (min-width: 700px) {
+	:root {
+		--container-gutter-size: 2.25rem;
+	}
 }
 
 body {
