@@ -1,5 +1,5 @@
 {
-  "name": "test-eleventy-plugin-find",
+  "name": "eleventy-plugin-find-demo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
