@@ -1,5 +1,13 @@
 .page {
 	margin: 0 auto;
+.footer {
+	border-top: solid black 1px;
+	padding-top: var(--container-gutter-size);
+}
+
+
+
+
 }
 
 .page__title {

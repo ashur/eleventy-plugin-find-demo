@@ -9,3 +9,7 @@
 .stack-lg > * + * {
 	margin-top: var(--container-gutter-size);
 }
+
+.stack-xl > * + * {
+	margin-top: calc( var(--container-gutter-size) * 1.5);
+}
