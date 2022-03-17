@@ -1,5 +1,10 @@
-.page {
-	margin: 0 auto;
+.example__title {
+	font-weight: bold;
+}
+
+
+
+
 .footer {
 	border-top: solid black 1px;
 	padding-top: var(--container-gutter-size);

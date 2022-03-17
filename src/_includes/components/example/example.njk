@@ -1,12 +1,15 @@
 {% macro render(params) %}
 <section class="stack example">
-	<h2>{{ params.title }}</h2>
+	<h2 class="example__title">{{ params.title }}</h2>
 
+	<h3>Example Data</h3>
 	{% highlight "yaml" %}{{ params.data | yaml }}{% endhighlight %}
 
+	<h3>Usage</h3>
 	{% highlight "jinja2" %}{{ params.snippet | safe }}{% endhighlight %}
 
 	{% if caller %}
+	<h3>Result</h3>
 	{% highlight "javascript" %}{{- caller() | safe -}}{% endhighlight %}
 	{% endif %}
 
