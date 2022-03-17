@@ -9,6 +9,11 @@ module.exports = eleventyConfig =>
 	eleventyConfig.setLibrary("md", markdownLib);
 
 	/* Filters */
+	/**
+	 * @param {Object} object
+	 * @return {string}
+	 */
+	eleventyConfig.addFilter( 'dump', object => JSON.stringify( object, null, 4) );
 	eleventyConfig.addFilter( 'yaml', require('./src/_11ty/filters/yaml') );
 
 	return {
